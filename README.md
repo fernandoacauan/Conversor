@@ -1,3 +1,3 @@
 # Conversor de Moedas
 
-Feito por: Fernando Acauan, Ana Cristina Schmidt, Thiago Tarantino, Lorenzo Bueno.
+Feito por: Fernando  Acauan, Thiago Tarantino, Ana Cristina Schmidt, Lorenzo Bueno.
