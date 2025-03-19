@@ -3,7 +3,7 @@
 //
 // Desc:
 //
-// Author: Fernando Acauan
+// Author: Ana Cristina Schmidt, Fernando Acauan e Thiago Tarantino.
 ///////////////////////////////////////////////////////////////////////////////
 
 
@@ -33,15 +33,25 @@ window.onload = async function()
         
     });
 
+    select = document.getElementById('opcao2');
+    paises.forEach(pais => {
+        var option = document.createElement('option');
+        option.text = option.value = pais;
+        select.add(option, pais);
+
+        console.log(pais);
+        
+    });
+
     console.log(data.json());
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////
-// Name: Convert()
+// Name: Converter()
 // Desc: 
 ///////////////////////////////////////////////////////////////////////////////
-function Convert()
+function Converter()
 {
-    
+
 }
