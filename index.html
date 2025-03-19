@@ -1,3 +1,12 @@
+
+<!-------------------------------------------------------------------------------
+// File: index.html
+//
+// Desc:
+//
+// Authors: Ana Cristina Schmidt, Fernando Acauan e Thiago Tarantino
+//---------------------------------------------------------------------------->
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -8,21 +17,21 @@
 <title>Conversor de moeda</title>
 </head>
 <body>
+    <h1 class="titulo">Conversor de Moedas</h1>
     <div class="conteiner">
-        <select id="opcao"> 
-        <label for="opcao">
-           
-        </label>
-        </select>
-               <input type="text" class="pais">  
-               <input type="image" id="inversor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHnFDiIu2bgn_DLYgff2MBDhLojYCdeLsX38lQb6yeSHJyc5iWwqhczgSvBr4urBTzLQ&usqp=CAU" class="inverter" >
+        <select id="opcao">
+            
+               <input type="text" class="pais" id="textoaConverter">  
+               <input onclick="Inverter()" type="image" id="inversor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHnFDiIu2bgn_DLYgff2MBDhLojYCdeLsX38lQb6yeSHJyc5iWwqhczgSvBr4urBTzLQ&usqp=CAU" class="inverter" >
                <input type="text" class="moeda" id="textoConvertido">
-        <select id="opcao2">
         </select>
+        <select id="opcao2">
+        </select>  
     
     </div>
     <div class="button">
-      <button>Converter</button>
+      <button class="button" onclick="Converter()">Converter</button>
     </div>
 </body>
 </html>
+

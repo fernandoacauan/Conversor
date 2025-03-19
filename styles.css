@@ -1,58 +1,76 @@
-body{
+/*<!-------------------------------------------------------------------------------
+// File: styles.css
+//
+// Desc:
+//
+// Authors: Ana Cristina Schmidt, Fernando Acauan e Thiago Tarandino
+//---------------------------------------------------------------------------->*/
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(4, 85, 22);
+    font-size: 80px;
+    margin-top: 120px;
+}
+body{/*onde fica a foto*/
+    background-size:cover;
+    background-image: url("https://financeone.com.br/wp-content/uploads/2023/08/Moedas-e-graficos-ao-fundo.png");
     align-items: center;
 }
-#opcao{
+#opcao{/*Escolha o País esquerdo*/
     justify-content: center;
     align-items: center;
-    background-color: rgba(240, 248, 255, 0);
-    height: 30px;
+    background-color: rgb(240, 248, 255);
+    height: 35px;
     width: 100px;
     cursor: pointer;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.534);
     border-radius: 5px;
 
 }
-#opcao2{
+#opcao2{/*Escolha o País direito*/
     justify-content: center;
     align-items: center;
-    background-color: rgba(240, 248, 255, 0);
-    height: 30px;
+    background-color: rgb(240, 248, 255);
+    height: 35px;
     width: 100px;
     cursor: pointer;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.534);
     border-radius: 5px;
 
 }
-.conteiner{
+.conteiner{/*estrutura*/
 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:500px;
+    margin-top:300px;
 }
-.pais{
+.pais{/*Input esquerdo*/
     box-shadow: 2px 2px rgba(0, 0, 0, 0.534);
     border-radius: 5px;
     width: 300px;
-    height: 24px;
+    height: 30px;
 }
-.moeda{
+.moeda{/*Input direito*/
     
     box-shadow: 2px 2px rgba(0, 0, 0, 0.534);
     border-radius: 5px;
     width: 300px;
-    height: 24px;
+    height: 30px;
 }
-#inversor{
+#inversor{/*Botão central*/
     cursor: pointer;
     margin: 20px;
     width: 30px;
     height: 30px;
 }
-#inversor:active{
+#inversor:active{ /*Aparencia ao clicar no botão*/
     box-shadow: 2px 2px rgba(0, 0, 0, 0.534);
 }
-.button{
+.button{/*Botão converter*/
     display: flex;
     align-items: center;
     justify-content: center;
