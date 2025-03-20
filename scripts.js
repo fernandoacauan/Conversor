@@ -7,13 +7,15 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 
+
+
 ///////////////////////////////////////////////////////////////////////////////
 // Name: window.onload()
 // Desc: 
 ///////////////////////////////////////////////////////////////////////////////
 window.onload = async function()
 {
-    let data = await fetch('https://v6.exchangerate-api.com/v6/7e3d8fa49ac7bfa926531550/latest/USD');
+    let data = await fetch('https://v6.exchangerate-api.com/v6/6e305420a28d34077a40149c/latest/USD');
     if(!data.ok)
     {
        throw new Error("Could not fetch request");
@@ -51,7 +53,39 @@ window.onload = async function()
 // Name: Converter()
 // Desc: 
 ///////////////////////////////////////////////////////////////////////////////
-function Converter()
+async function Converter()
 {
 
+    let moeda1 = document.getElementById('opcao').value;
+    let moeda2 = document.getElementById("opcao2").value;
+    let input  = document.getElementById('textoaConverter').value;
+
+    
+
+    let data = await fetch(`https://v6.exchangerate-api.com/v6/6e305420a28d34077a40149c/pair/${moeda1}/${moeda2}`);
+    let jsonData = await data.json();
+    console.log(jsonData);
+
+    document.getElementById('textoConvertido').value = jsonData.conversion_rate * input;
 }
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Name: Inverter()
+// Desc: 
+///////////////////////////////////////////////////////////////////////////////
+function Inverter()
+{
+    let temp = document.getElementById('textoaConverter').value;
+    document.getElementById('textoaConverter').value = document.getElementById('textoConvertido').value;
+    document.getElementById('textoConvertido').value = temp;
+}
+
+/*
+
+data = `https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/${moeda1}/${moeda2}`
+
+
+*/

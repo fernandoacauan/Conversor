@@ -3,7 +3,7 @@
 //
 // Desc:
 //
-// Authors: Ana Cristina Schmidt, Fernando Acauan e Thiago Tarandino
+// Authors: Ana Cristina Schmidt, Fernando Acauan e Thiago Tarantino
 //---------------------------------------------------------------------------->
 
 <!DOCTYPE html>
@@ -15,23 +15,113 @@
 <script src="scripts.js"></script>
 <title>Conversor de moeda</title>
 </head>
+<header>
+  
+</header>
 <body>
-    <div class="conteiner">
+  
+  <div class="chuva">
+    <span style="--i:20"></span>
+    <span style="--i:28"></span>
+    <span style="--i:10"></span>
+    <span style="--i:5"></span>
+    <span style="--i:15"></span>
+    <span style="--i:22"></span>
+    <span style="--i:8"></span>
+    <span style="--i:16"></span>
+    <span style="--i:24"></span>
+    <span style="--i:14"></span>
+    <span style="--i:19"></span>
+    <span style="--i:4"></span>
+    <span style="--i:6"></span>
+    <span style="--i:26"></span>
+    <span style="--i:35"></span>
+    <span style="--i:2"></span>
+    <span style="--i:13"></span>
+    <span style="--i:7"></span>
+    <span style="--i:25"></span>
+    <span style="--i:17"></span>
+    <span style="--i:18"></span>
+    <span style="--i:12"></span>
+    <span style="--i:23"></span>
+    <span style="--i:34"></span>
+    <span style="--i:10"></span>
+    <span style="--i:27"></span>
+    <span style="--i:16"></span>
+    <span style="--i:24"></span>
+    <span style="--i:14"></span>
+    <span style="--i:19"></span>
+    <span style="--i:4"></span>
+    <span style="--i:6"></span>
+    <span style="--i:26"></span>
+    <span style="--i:35"></span>
+    <span style="--i:2"></span>
+    <span style="--i:13"></span>
+    <span style="--i:7"></span>
+    <span style="--i:25"></span>
+    <span style="--i:17"></span>
+    <span style="--i:1"></span>
+
+  </div> 
+  <div class="chuva1">
+    <span style="--i:20"></span>
+    <span style="--i:28"></span>
+    <span style="--i:10"></span>
+    <span style="--i:5"></span>
+    <span style="--i:15"></span>
+    <span style="--i:22"></span>
+    <span style="--i:8"></span>
+    <span style="--i:16"></span>
+    <span style="--i:24"></span>
+    <span style="--i:14"></span>
+    <span style="--i:19"></span>
+    <span style="--i:4"></span>
+    <span style="--i:6"></span>
+    <span style="--i:26"></span>
+    <span style="--i:35"></span>
+    <span style="--i:2"></span>
+    <span style="--i:13"></span>
+    <span style="--i:7"></span>
+    <span style="--i:25"></span>
+    <span style="--i:17"></span>
+    <span style="--i:18"></span>
+    <span style="--i:12"></span>
+    <span style="--i:23"></span>
+    <span style="--i:34"></span>
+    <span style="--i:10"></span>
+    <span style="--i:27"></span>
+    <span style="--i:16"></span>
+    <span style="--i:24"></span>
+    <span style="--i:14"></span>
+    <span style="--i:19"></span>
+    <span style="--i:4"></span>
+    <span style="--i:6"></span>
+    <span style="--i:26"></span>
+    <span style="--i:35"></span>
+    <span style="--i:2"></span>
+    <span style="--i:13"></span>
+    <span style="--i:7"></span>
+    <span style="--i:25"></span>
+    <span style="--i:17"></span>
+    <span style="--i:1"></span>
+
+  </div> 
+ <img src="https://media3.giphy.com/media/OccMlQrNO0YU4zFchY/giphy.gif" alt="moeda girando" class="coin">
+    <h1 class="titulo">Conversor de moeda</h1>
+ <div class="conteiner">
+      
         <select id="opcao">
-        <label for="opcao">
-            select->
-            
-        </label>
-               <input type="text" class="pais">  
-               <input type="image" id="inversor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHnFDiIu2bgn_DLYgff2MBDhLojYCdeLsX38lQb6yeSHJyc5iWwqhczgSvBr4urBTzLQ&usqp=CAU" class="inverter" >
+               <input type="text" class="pais" id="textoaConverter" placeholder="Digite o Valor">  
+               <input onclick="Inverter()" type="image" id="inversor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHnFDiIu2bgn_DLYgff2MBDhLojYCdeLsX38lQb6yeSHJyc5iWwqhczgSvBr4urBTzLQ&usqp=CAU" class="inverter" >
                <input type="text" class="moeda" id="textoConvertido">
-        <select id="opcao2">
-          
         </select>
+        <select id="opcao2">
+        </select> 
+        
     
     </div>
     <div class="button">
-      <button class="button" onclick="Converter()">botao</button>
+      <button class="button" onclick="Converter()">Converter</button>
     </div>
 </body>
 </html>
