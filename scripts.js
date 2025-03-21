@@ -279,16 +279,3 @@ function Inverter()
     document.getElementById('opcao').value = document.getElementById('opcao2').value;
     document.getElementById('opcao2').value = temp;
 }
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////
-// Name: GetCurrencyCode()
-// Desc: Pega o nome em notação de mercado(Ex: BRL)
-//       e converte para notação de bandeira.
-///////////////////////////////////////////////////////////////////////////////
-function GetCurrencyCode(strNome)
-{
-
-}
