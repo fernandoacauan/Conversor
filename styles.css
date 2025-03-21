@@ -1,108 +1,134 @@
 body {
-    background-image: linear-gradient(to right, #231951, #416c88, #7267d9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 150px; 
-    padding: 0;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    
-  }
-  .titulo{
-    color: white;
-  }
-  ::placeholder {
-    color: white;
-  }
-  .nuvem{
-    transform: translateY(-10vh);
-   height: 200px;
-    width: 3200px;
-  }
-  #opcao, #opcao2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(240, 248, 255, 0);
-    color: white;
-    height: 36px;
-    width: 100px;
-    cursor: pointer;
-    border: 2px solid white;
-  }
-  
-  #opcao {
-    border-radius: 50px 0 0 50px;
-  }
-  
-  #opcao2 {
-    border-radius: 0 50px 50px 0;
-  }
-  
-  .coin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-  
-  }
-  
-  .conteiner {
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px; 
-  }
-  
-  .pais, .moeda {
-    width: 200px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: 2px solid white;
-  }
-  
-  .pais {
-    border-radius: 0px 50px 50px 0px;
-  }
-  
-  .moeda {
-    border-radius: 50px 0px 0px 50px;
-  }
-  
-  #inversor {
-    cursor: pointer;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 30px;
-    height: 30px;
-  }
-  
-  #inversor:hover {
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.534);
-  }
-  
-  .button {
-    display: flex;
-    justify-content: center;
-    height: 25px ;
-    margin-top: 20px;
-    padding-top: 5px;
-    border-radius: 50px;
-    
-  }
-  .button:active{
-  background-color: rgba(0, 0, 0, 0.281);
-  }
-  .chuva{
+  background-image: linear-gradient(to right, black, #416c88, black);
   display: flex;
-  margin-left: 1000px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 150px; 
+  padding: 0;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.titulo{
+  font-size: 50px;
+  color: white;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+#opcao, #opcao2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0);
+  color: rgb(12, 11, 11);
+  height: 46px;
+  width: 100px;
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#opcao {
+  border-radius: 50px 0 0 50px;
+ 
+  
+}
+#opcao2 {
+  border-radius: 0 50px 50px 0;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+
+}
+
+.conteiner {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; 
+}
+
+.pais, .moeda {
+  width: 200px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  font-size: 20px;
+}
+
+.pais {
+  border-radius: 0px 50px 50px 0px;
+}
+
+.moeda {
+  border-radius: 50px 0px 0px 50px;
+}
+
+#inversor {
+  cursor: pointer;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 30px;
+  height: 30px;
+
+}
+
+#inversor:hover {
+
+}
+
+.button {
+  
+  color: rgb(10, 8, 8);
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  height: 50px ;
+  width: 100px;
+  margin-top: 15px;
+  border-radius: 50px;
+  
+}
+.button:active{
+background-color: rgba(0, 0, 0, 0.281);
+}
+.chuva{
+display: flex;
+margin-left: 1430px;
+}
+.chuva span{
+box-shadow: -100px 20px 5px #f1e206,
+-100px 20px 0px #f1e206;
+ width: 8px;
+ height: 8px;
+background: #f1e206;
+margin: 0 0vh;
+border-radius: 100%;
+animation: chuva calc(75s / var(--i)) linear infinite;
+}
+@keyframes chuva {
+  0% {
+    transform: translateY(-20vh);
   }
-  .chuva span{
+  100% {
+    transform: translateY(99vh); 
+  }
+}
+.chuva1{
+  display: flex;
+  margin-right: 1250px;
+  }
+  .chuva1 span{
   box-shadow: -100px 20px 5px #f1e206,
   -100px 20px 0px #f1e206;
    width: 8px;
@@ -112,7 +138,7 @@ body {
   border-radius: 100%;
   animation: chuva calc(75s / var(--i)) linear infinite;
   }
-  @keyframes chuva {
+  @keyframes chuva1 {
     0% {
       transform: translateY(-20vh);
     }
@@ -120,26 +146,21 @@ body {
       transform: translateY(99vh); 
     }
   }
-  .chuva1{
-    display: flex;
-    margin-right: 1000px;
-    }
-    .chuva1 span{
-    box-shadow: -100px 20px 5px #f1e206,
-    -100px 20px 0px #f1e206;
-     width: 8px;
-     height: 8px;
-    background: #f1e206;
-    margin: 0 0vh;
-    border-radius: 100%;
-    animation: chuva calc(75s / var(--i)) linear infinite;
-    }
-    @keyframes chuva {
-      0% {
-        transform: translateY(-20vh);
-      }
-      100% {
-        transform: translateY(99vh); 
-      }
-    }
+  .bandeiras {
+   display: flex;
+   background-size: px;
+   position: relative;
+    top: 89px;
 
+  }
+  #bandeiraEsquerda{
+   margin-left: 13px;
+    margin-right: 616px;
+    width: 30px;
+    height: 30px;
+  }
+  #bandeiraDireita{
+
+    width: 30px;
+    height: 30px;
+  }
