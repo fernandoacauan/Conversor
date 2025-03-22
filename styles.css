@@ -16,16 +16,36 @@
 @media screen and (max-width: 1023px) 
 {
 
+
+/**************************************
+* Name: body
+* Desc: Corpo da página.
+**************************************/  
 body {
-  background-image: linear-gradient(to right, black, #416c88, black);
+  background-image: linear-gradient( black, gold, black);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin: 150px; 
   padding: 0;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+
+
+/**************************************
+* Name: .coin
+* Desc: Moeda giratória. ( GIF )
+**************************************/
+.coin 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
 }
 
 
@@ -46,15 +66,15 @@ body {
 
 
 body {
-  background-image: linear-gradient(to right, black, #416c88, black);
+  background-image: linear-gradient( black, gold, black);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin: 150px; 
   padding: 0;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
 }
 .titulo{
   font-size: 50px;
