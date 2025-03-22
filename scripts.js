@@ -282,5 +282,6 @@ function Inverter()
 
     SetFlagEsquerda();
     SetFlagDireita();
+    Converter();
     
 }
