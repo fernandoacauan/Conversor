@@ -16,17 +16,17 @@
 @media screen and (max-width: 1023px) 
 {
 
-  body {
-    background-image: linear-gradient(to right, black, #416c88, black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 150px; 
-    padding: 0;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+body {
+  background-image: linear-gradient(to right, black, #416c88, black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 150px; 
+  padding: 0;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
