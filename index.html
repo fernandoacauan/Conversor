@@ -117,18 +117,14 @@
  <div class="conteiner">
 
         <select id="opcao" onchange="SetFlagEsquerda()">
-               <input type="text" class="pais" id="textoaConverter" placeholder="Digite o Valor">  
+               <input type="number" oninput="Converter()" class="pais" id="textoaConverter" placeholder="Digite o Valor">  
                <input onclick="Inverter()" type="image" id="inversor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHnFDiIu2bgn_DLYgff2MBDhLojYCdeLsX38lQb6yeSHJyc5iWwqhczgSvBr4urBTzLQ&usqp=CAU" class="inverter" >
-               <input type="text" class="moeda" id="textoConvertido" placeholder="                    Valor Convertido">
+               <input readonly type="number" class="moeda" id="textoConvertido" placeholder="                    Valor Convertido">
         </select>
         <select id="opcao2" onchange="SetFlagDireita()">
         </select> 
         
     
-    </div>
-    
-    <div class="button">
-      <button class="button" onclick="Converter()">Converter</button>
     </div>
 </body>
 </html>
