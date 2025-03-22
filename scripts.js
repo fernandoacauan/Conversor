@@ -17,6 +17,7 @@ let g_dictionary = {
     "AFN": "AF", // Afghan Afghani
     "ALL": "AL", // Albanian Lek
     "AMD": "AM", // Armenian Dram
+    "ANG" : "AO",
     "AOA": "AO", // Angolan Kwanza
     "ARS": "AR", // Argentine Peso
     "AUD": "AU", // Australian Dollar
@@ -178,7 +179,7 @@ let g_dictionary = {
 ///////////////////////////////////////////////////////////////////////////////
 window.onload = async function()
 {
-    let data = await fetch('https://v6.exchangerate-api.com/v6/b3929534f3faf8beeb3d8844/latest/USD');
+    let data = await fetch('https://v6.exchangerate-api.com/v6/b261422bd887fb71139031f4/latest/USD');
     if(!data.ok)
     {
        throw new Error("Could not fetch request");
@@ -259,7 +260,7 @@ async function Converter()
 
     
 
-    let data = await fetch(`https://v6.exchangerate-api.com/v6/b3929534f3faf8beeb3d8844/pair/${moeda1}/${moeda2}`);
+    let data = await fetch(`https://v6.exchangerate-api.com/v6/b261422bd887fb71139031f4/pair/${moeda1}/${moeda2}`);
     let jsonData = await data.json();
     console.log(jsonData);
 
@@ -275,7 +276,11 @@ async function Converter()
 ///////////////////////////////////////////////////////////////////////////////
 function Inverter()
 {
-    let temp = document.getElementById('opcao').value;
-    document.getElementById('opcao').value = document.getElementById('opcao2').value;
-    document.getElementById('opcao2').value = temp;
+    let temp = document.getElementById("opcao").value;
+    document.getElementById("opcao").value = document.getElementById("opcao2").value;
+    document.getElementById("opcao2").value = temp;
+
+    SetFlagEsquerda();
+    SetFlagDireita();
+    
 }

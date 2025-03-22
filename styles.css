@@ -24,7 +24,7 @@ body {
   align-items: center;
   background-color: rgba(240, 248, 255, 0);
   color: rgb(12, 11, 11);
-  height: 46px;
+  height: 51px;
   width: 100px;
   cursor: pointer;
   border: 2px solid white;
@@ -54,12 +54,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px; 
+  margin-top: 20px; 
 }
 
 .pais, .moeda {
-  width: 200px;
-  height: 40px;
+  width: 250px;
+  height: 45px;
   background-color: rgba(0, 0, 0, 0);
   color: rgb(255, 255, 255);
   border: 2px solid white;
@@ -75,6 +75,7 @@ body {
 }
 
 #inversor {
+  z-index:1000;
   cursor: pointer;
   margin-left: 50px;
   margin-right: 50px;
@@ -83,9 +84,7 @@ body {
 
 }
 
-#inversor:hover {
 
-}
 
 .button {
   
@@ -95,7 +94,7 @@ body {
   justify-content: center;
   height: 50px ;
   width: 100px;
-  margin-top: 15px;
+  margin-top: 40px;
   border-radius: 50px;
   
 }
@@ -147,15 +146,16 @@ animation: chuva calc(75s / var(--i)) linear infinite;
     }
   }
   .bandeiras {
+    z-index:-10;
    display: flex;
    background-size: px;
    position: relative;
-    top: 89px;
+    top: 60px;
 
   }
   #bandeiraEsquerda{
-   margin-left: 13px;
-    margin-right: 616px;
+   margin-left: 16px;
+    margin-right: 718px;
     width: 30px;
     height: 30px;
   }
