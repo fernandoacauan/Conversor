@@ -5,7 +5,7 @@
 //
 // Authors: Ana Cristina Schmidt, Fernando Acauan e Thiago Tarantino
 //---------------------------------------------------------------------------->
-
+    
 <!DOCTYPE html>
 <html >
 <head>
@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
 <script src="scripts.js"></script>
-<title>Conversor de moedas</title>
+<title>Conversor de moeda</title>
 
 </head>
 <header>
@@ -108,23 +108,28 @@
 
   </div> 
   
- <input type="image"  onclick="trocaCor()" src="https://media3.giphy.com/media/OccMlQrNO0YU4zFchY/giphy.gif" alt="moeda girando" class="coin">
+  <input type="image"  onclick="trocaCor()" src="https://media3.giphy.com/media/OccMlQrNO0YU4zFchY/giphy.gif" alt="moeda girando" class="coin">
     <h1 class="titulo">Conversor de moeda</h1>
-    <div class="bandeiras">
-      <img id="bandeiraEsquerda">
-      <img id="bandeiraDireita">
-    </div>
- <div class="conteiner">
-
+    
+  <div class="conteiner">
+  <div class="bandeiras">
+    <img id="bandeiraEsquerda">
+    <img id="bandeiraDireita">
+  </div>
+  <div id="linha">
         <select id="opcao" onchange="SetFlagEsquerda()">
-               <input type="number" oninput="Converter()" class="pais" id="textoaConverter" placeholder="Digite o Valor">  
-               <input onclick="Inverter()" type="image" id="inversor" src="img/flecha.svg" class="inverter">
-               <input readonly type="number" class="moeda" id="textoConvertido" placeholder="                              Valor Convertido">
+                <input type="number" oninput="Converter()" class="pais" id="textoaConverter" placeholder="Digite o Valor">  
+              
+              
         </select>
+  </div>
+    <input onclick="Inverter()" type="image" id="inversor" src="img/flecha.svg" class="inverter" >
+  <div id="linha2">
+        <input readonly type="number" class="moeda" id="textoConvertido" placeholder="                              Valor Convertido">
         <select id="opcao2" onchange="SetFlagDireita()">
         </select> 
         
-    
+  </div>
     </div>
 </body>
 </html>
@@ -137,7 +142,7 @@
     }
     else{
       g_trocou = false;
-      document.body.style.backgroundImage = 'linear-gradient(to right, black, #416c88, black)'
+      document.body.style.backgroundImage = 'linear-gradient(black, gold, black)'
     }
 
   }
