@@ -231,6 +231,8 @@ function SetFlagEsquerda()
 
     document.getElementById("bandeiraEsquerda").src = `https://flagsapi.com/${g_dictionary[dropdown.value]}/shiny/64.png`;
 
+    Converter();
+
 }
 
 
@@ -244,6 +246,8 @@ function SetFlagDireita()
     const dropdown = document.getElementById("opcao2");
 
     document.getElementById("bandeiraDireita").src = `https://flagsapi.com/${g_dictionary[dropdown.value]}/shiny/64.png`;
+
+    Converter();
 
 }
 
@@ -284,6 +288,6 @@ function Inverter()
 
     SetFlagEsquerda();
     SetFlagDireita();
-    Converter();
+
     
 }
