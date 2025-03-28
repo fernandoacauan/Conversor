@@ -1,0 +1,149 @@
+<!-------------------------------------------------------------------------------
+// File: index.html
+//
+// Desc:
+//
+// Authors: Ana Cristina Schmidt, Fernando Acauan e Thiago Tarantino
+//---------------------------------------------------------------------------->
+    
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js"></script>
+<title>Conversor de moeda</title>
+
+</head>
+<header>
+  
+</header>
+<body>
+  
+  <div class="chuva">
+    <span style="--i:20"></span>
+    <span style="--i:28"></span>
+    <span style="--i:10"></span>
+    <span style="--i:5"></span>
+    <span style="--i:15"></span>
+    <span style="--i:22"></span>
+    <span style="--i:8"></span>
+    <span style="--i:16"></span>
+    <span style="--i:24"></span>
+    <span style="--i:14"></span>
+    <span style="--i:19"></span>
+    <span style="--i:4"></span>
+    <span style="--i:6"></span>
+    <span style="--i:26"></span>
+    <span style="--i:35"></span>
+    <span style="--i:2"></span>
+    <span style="--i:13"></span>
+    <span style="--i:7"></span>
+    <span style="--i:25"></span>
+    <span style="--i:17"></span>
+    <span style="--i:18"></span>
+    <span style="--i:12"></span>
+    <span style="--i:23"></span>
+    <span style="--i:34"></span>
+    <span style="--i:10"></span>
+    <span style="--i:27"></span>
+    <span style="--i:16"></span>
+    <span style="--i:24"></span>
+    <span style="--i:14"></span>
+    <span style="--i:19"></span>
+    <span style="--i:4"></span>
+    <span style="--i:6"></span>
+    <span style="--i:26"></span>
+    <span style="--i:35"></span>
+    <span style="--i:2"></span>
+    <span style="--i:13"></span>
+    <span style="--i:7"></span>
+    <span style="--i:25"></span>
+    <span style="--i:17"></span>
+    <span style="--i:1"></span>
+
+  </div> 
+  <div class="chuva1">
+    <span style="--i:20"></span>
+    <span style="--i:28"></span>
+    <span style="--i:10"></span>
+    <span style="--i:5"></span>
+    <span style="--i:15"></span>
+    <span style="--i:22"></span>
+    <span style="--i:8"></span>
+    <span style="--i:16"></span>
+    <span style="--i:24"></span>
+    <span style="--i:14"></span>
+    <span style="--i:19"></span>
+    <span style="--i:4"></span>
+    <span style="--i:6"></span>
+    <span style="--i:26"></span>
+    <span style="--i:35"></span>
+    <span style="--i:2"></span>
+    <span style="--i:13"></span>
+    <span style="--i:7"></span>
+    <span style="--i:25"></span>
+    <span style="--i:17"></span>
+    <span style="--i:18"></span>
+    <span style="--i:12"></span>
+    <span style="--i:23"></span>
+    <span style="--i:34"></span>
+    <span style="--i:10"></span>
+    <span style="--i:27"></span>
+    <span style="--i:16"></span>
+    <span style="--i:24"></span>
+    <span style="--i:14"></span>
+    <span style="--i:19"></span>
+    <span style="--i:4"></span>
+    <span style="--i:6"></span>
+    <span style="--i:26"></span>
+    <span style="--i:35"></span>
+    <span style="--i:2"></span>
+    <span style="--i:13"></span>
+    <span style="--i:7"></span>
+    <span style="--i:25"></span>
+    <span style="--i:17"></span>
+    <span style="--i:1"></span>
+
+  </div> 
+  
+  <input type="image"  onclick="trocaCor()" src="https://media3.giphy.com/media/OccMlQrNO0YU4zFchY/giphy.gif" alt="moeda girando" class="coin">
+    <h1 class="titulo">Conversor de moeda</h1>
+    
+  <div class="conteiner">
+  <div class="bandeiras">
+    <img id="bandeiraEsquerda">
+    <img id="bandeiraDireita">
+  </div>
+  <div id="linha">
+        <select id="opcao" onchange="SetFlagEsquerda()">
+                <input type="number" oninput="Converter()" class="pais" id="textoaConverter" placeholder="Digite o Valor">  
+              
+              
+        </select>
+  </div>
+    <input onclick="Inverter()" type="image" id="inversor" src="img/flecha.svg" class="inverter" >
+  <div id="linha2">
+        <input readonly type="number" class="moeda" id="textoConvertido" placeholder="                              Valor Convertido">
+        <select id="opcao2" onchange="SetFlagDireita()">
+        </select> 
+        
+  </div>
+    </div>
+</body>
+</html>
+<script>
+
+  function trocaCor(){
+    if(g_trocou == false) {
+        g_trocou = true;
+        document.body.style.backgroundImage = 'linear-gradient(to right, black, purple, black)'
+    }
+    else{
+      g_trocou = false;
+      document.body.style.backgroundImage = 'linear-gradient(black, gold, black)'
+    }
+
+  }
+</script>
